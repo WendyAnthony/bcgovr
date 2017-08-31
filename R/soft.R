@@ -12,10 +12,12 @@
 
 #' Post a file to SOFT for sharing
 #'
-#' Files can be shared from within the government network, from a governmnet user to the public, or
+#' Files can be shared from within the government network, from a government user to the public, or
 #' from the public to a government user. Public-to-public sharing is not supported. A user can specify the
 #' number of days the file will be available, and whether or not to restrict access to the file to
 #' within the governmnet network.
+#' 
+#' The SOFT web form and more information can be found [here](http://www.env.gov.bc.ca/csd/imb/soft/)
 #'
 #' @param file path to the file or directory on your computer. If `file` is a directory
 #'     the files in the directory will be zipped before they are uploaded.
@@ -29,6 +31,7 @@
 #'
 #' @return a url of the link from which the file can be downloaded
 #' @export
+#' @md
 soft_upload <- function(file, email = NULL, email_subj = NULL, internal = TRUE, days = 7) {
   
   if (!file.exists(file)) stop("file does not exist")

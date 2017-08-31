@@ -8,14 +8,14 @@ soft_upload(file, email = NULL, email_subj = NULL, internal = TRUE,
   days = 7)
 }
 \arguments{
-\item{file}{path to the file or directory on your computer. If `file` is a directory
+\item{file}{path to the file or directory on your computer. If \code{file} is a directory
 the files in the directory will be zipped before they are uploaded.}
 
 \item{email}{Optional email address to which to send the link to the file.}
 
 \item{email_subj}{Optional subject of the email.}
 
-\item{internal}{Should the link be only available with the B.C. government network? Default `TRUE`}
+\item{internal}{Should the link be only available with the B.C. government network? Default \code{TRUE}}
 
 \item{days}{The number of days the file should be available. Default 7.}
 }
@@ -23,8 +23,11 @@ the files in the directory will be zipped before they are uploaded.}
 a url of the link from which the file can be downloaded
 }
 \description{
-Files can be shared from within the government network, from a governmnet user to the public, or
+Files can be shared from within the government network, from a government user to the public, or
 from the public to a government user. Public-to-public sharing is not supported. A user can specify the
 number of days the file will be available, and whether or not to restrict access to the file to
 within the governmnet network.
+}
+\details{
+The SOFT web form and more information can be found \href{http://www.env.gov.bc.ca/csd/imb/soft/}{here}
 }
